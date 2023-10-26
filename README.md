@@ -68,7 +68,7 @@ Examples:
 
 1. Running with default test configuration:
     ```bash
-    docker run -it -name softhsm vegardit/docker-softhsm2-pkcs11-proxy
+    docker run -it --name softhsm vegardit/softhsm2-pkcs11-proxy
     ```
 
 1. Running with custom settings:
@@ -87,7 +87,7 @@ Examples:
        # mount config and data directories:
        -v /path/to/config:/mnt/config:ro \
        -v /path/to/data:/var/lib/softhsm:rw \
-       vegardit/docker-softhsm2-pkcs11-proxy:latest
+       vegardit/softhsm2-pkcs11-proxy:latest
     ```
 
 1. Same as docker-compose file:
